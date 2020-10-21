@@ -17,11 +17,9 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-3 col-lg-3 ">
-          <div class="navigation">
-            <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-
+      <div class="row row-no-gutters">
+        <div class="col-md-3 col-sm-2 col-xs-3 col-lg-3 d-flex mr-auto p-2 d-block justify-content-start">
+          <div class="sidenav">         
               <ul>
                 <li>
                   <a href="#">
@@ -112,64 +110,75 @@
                           d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
                       </svg></span>
                     <span class="title">More</span>
-                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"  data-size="large"
                       data-show-count="false">Tweet</a>
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                   </a>
                 </li>
               </ul>
-            </div>
           </div>
         </div>
-      
-        <div class="col-md-6 col-sm-7 col-lg-6 ">
-          <div class="card">
-            <div class="card-header">
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <br>
-                    <nav class="nav nav-pills nav-fill">
-                      <a class="nav-item nav-link " href="#">Top</a>
-                      <a class="nav-item nav-link" href="#">Latest</a>
-                      <a class="nav-item nav-link" href="#">People</a>
-                      <a class="nav-item nav-link" href="#">Photo</a>
-                      <a class="nav-item nav-link" href="#">Vedios</a>
-                    </nav>
+        <div class="col-md-9 col-sm-10 col-xs-9 col-lg-6 d-flex justify-content-center">
+          <div class="media border p-3">
+            <div class="card">
+              <div class="card-header">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                      <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button"><i class="fa fa-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                      <br>
+                      <nav class="nav nav-pills nav-fill nav-justified">
+                        <a class="nav-item nav-link " href="#">Top</a>
+                        <a class="nav-item nav-link" href="#">Latest</a>
+                        <a class="nav-item nav-link" href="#">People</a>
+                        <a class="nav-item nav-link" href="#">Photo</a>
+                        <a class="nav-item nav-link" href="#">Vedios</a>
+                      </nav>
+                  </div>
                 </div>
               </div>
-            </div>
-              <div class="card-body">
-                <a class="twitter-timeline" href="https://twitter.com/TwitterDev/likes?ref_src=twsrc%5Etfw">Tweets Liked
-                  by @TwitterDev</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                <a class="twitter-timeline"
-                  href="https://twitter.com/TwitterDev/timelines/539487832448843776?ref_src=twsrc%5Etfw">National Park
-                  Tweets - Curated tweets by TwitterDev</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-            </div>
+                <div class="card-body">
+                  <a class="twitter-timeline" href="https://twitter.com/TwitterDev/likes?ref_src=twsrc%5Etfw">Tweets Liked
+                    by @TwitterDev</a>
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  <a class="twitter-timeline"
+                    href="https://twitter.com/TwitterDev/timelines/539487832448843776?ref_src=twsrc%5Etfw">National Park
+                    Tweets - Curated tweets by TwitterDev</a>
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              
           </div>
+          </div>
+        </div>
         <div class="col-sm-2 col-md-2 col-lg-3 d-none d-lg-block d-xl-none d-none d-xl-block">
-          <div class="container">
             <div class="card text-left">
               <div class="card-header">
-                <h3>Search People</h3>
+                <h3>Search Filter</h3>
               </div>
               <div class="card-body">
                 <h4 class="card-title">People</h4>
-                <p></p>
-                <div class="radio">
-                  <div class="input-group-append">
-                  <label><input type="radio" id="" name="optradio" checked>From anyone</label>
+                  <div class="custom-control custom-radio ">
+                    <label class="custom-control-label" for="customRadioDisabled">From anyone</label>
+                    <input type="radio" id="radio1" name="radioDisabled" id="customRadioDisabled" class="custom-control-input" disabled>
                   </div>
-                </div>
-                <p>People you follow</p>
+                  <div class="custom-control custom-radio ">
+                    <label class="custom-control-label" for="customRadioDisabled">People you follow</label>
+                    <input type="radio" id="radio2" name="radioDisabled" id="customRadioDisabled" class="custom-control-input" disabled>           
+                  </div>
                 <h4 style=>Location</h4>
-                <p>Anywhere</p>
-                <p>Near you</p>
-
+                <div class="custom-control custom-radio ">
+                <label class="custom-control-label" for="customRadioDisabled">Anywhere</label>
+                    <input type="radio" id="radio4" name="radioDisabled" id="customRadioDisabled" class="custom-control-input" disabled>
+                  </div>
+                    <div class="custom-control custom-radio ">
+                    <label class="custom-control-label" for="customRadioDisabled">Near you</label>
+                    <input type="radio" id="radio5" name="radioDisabled" id="customRadioDisabled" class="custom-control-input" disabled>
+              </div>
               </div>
               <div class="card-footer text-center">
                 Advance show
@@ -190,9 +199,9 @@
                 Show more
               </div>
             </div>
-          </div>
         </div>
-      </div>
+
+    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -205,5 +214,7 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"></script>
   </body>
+
+  
 
   </html>
